@@ -1,0 +1,36 @@
+body {
+	background: white;
+}
+p {
+	color: black;
+}
+h1 {
+	font-weight: bold;
+}
+#cwk{
+	background-image: url(cwk.png);
+	height: 256px;
+	width: 223px;
+	position: 
+	buttom: 0%;
+	animation: lari 1s steps(6) infinite, forward 6s linear infinite;
+}
+@keyframes lari{
+	0% 
+	{background-position: 0px;}
+	100%
+	{background-position: 1536px;}
+}
+@keyframes forward{
+	0%
+	{transform: translateX(0px);}
+	100%
+	{transform: translateX(1000px);}
+}
+.bg{
+	background-image: url(bg.jpg);
+	width: 100;
+	height: 100;
+	background-position: center;
+	background-size: cover;
+}
