@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TUGAS AKHIR PWEB</title>
+	<title>RESPONSI PWEB</title>
 <style>
 	*{
 		box-sizing: border-box;
@@ -9,42 +9,36 @@
 	body{
 		font-family: times new roman;
 		padding: 10px;
-		background : #ffffff;
 	}
 
 	.header{
 		padding: 30px;
 		text-align: center;
-		background: white;
 	}
 
 	.header h1{
 		font-size: 50px;
 	}
 
-	.topnav{
-		overflow: hidden;
-		background-color: #333; 
+	.kotakatas{
+		width: 1250px;
+		height: 150px;
+		background: skyblue;
+		animation: animasiAtas 2s forwards;
 	}
+	@keyframes animasiAtas{
+		from {
+			width: 300px;
+		}
+		to{
+			width: 1250px;
+		}
 
-	.topnav a{
-		float: left;
-		display: block;
-		color: #f2f2f2;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-
-	.topnav a:hover{
-		background-color: #ddd;
-		color: black;
 	}
 
 	.leftcolumn{
 		float: left;
-		width: 25%;
-		background-color: #f1f1f1;
+		width: 30%;
 		padding-left: 20px
 		font-size : 12%;
 		text-align: justify;
@@ -53,38 +47,16 @@
 	.centercolumn{
 		float: left;
 		width: 40%;
-		background-color: #f1f1f1;
 		padding-left: 10px
 	}
-
 	.rightcolumn{
 		float: left;
 		width: 30%;
-		background-color: #f1f1f1;
 		padding-left: 20px
 	}
-
-	.fakeimg{
-		background-color: #aaa;
-		width: 75%;
-	}
-
 	.card{
 		background-color: white;
 		padding: 20px;
-		margin-top: 20px;
-	}
-
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
-	.footer{
-		padding: 20px;
-		text-align: center;
-		background-color: #ddd;
 		margin-top: 20px;
 	}
 
@@ -93,22 +65,24 @@
 		padding0;
 	}
 
-	.topnav a{
-		float: none;
-	    width: 100%
-	}
-
 </style>
+		<link rel="stylesheet" type="text/css" href="animation.css">
 </head>
 <body>
-	<div class="header" style="background-color: skyblue;">
+	<div class="bg">
+		<div id="cwk"></div>
+	</div>
+	<div class="kotakatas">
+		<div class="header" style="background-color: skyblue;">
 		<h1 style="font-family: serif; color: white;">TUGAS AKHIR PEMOGRAMAN WEB</h1>
 		<marquee>
 			<p style="font-size: 18px; color: white;">สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ สวัสดีครับ</p>
 		</marquee>
 	</div>
 
-	<div class="rightcolumn" style="background-color: white" >
+	</div>
+
+		<div class="rightcolumn" style="background-color: white" >
 			<div class="card" style="background-color: skyblue;">
 		<link rel="stylesheet" type="text/css" href="modif.css">
 	<script type="text/javascript" src="script.js"></script>
@@ -229,15 +203,12 @@
 	} 
 	echo '</table>';
     ?>
-				
-			</div>
-			
     <br><br>
+	</div> 		
     <div></div>
-  
-                <script type="text/javascript">
+    	 <script type="text/javascript">
                 var inputLabel = document.getElementById('inputLabel');
-                function pushBtn(obj) {
+               function pushBtn(obj) {
                     var pushed = obj.innerHTML
                     if (pushed == '=') {
                     // Calculate
@@ -256,10 +227,10 @@
             </script>
 			</div>
 		</div>
-
 	<div class="row" style="background-color: white" align="center">
 		<div class="centercolumn" style="background-color: white">
 			<div class="card">
+			
 
 				<h2 align="center" style="font-family: times new roman">TUGAS AKHIR PEMROGRAMAN WEB</h2><br><br>
 				<div>
@@ -283,7 +254,7 @@
 					    <td><input type="text" name="email" id="email"></td>
 				    </tr>
 				    <tr>
-					<td>Prodi</td>
+					<td>Jurusan</td>
 					<td><select name="prodi" id="jurusan">
 						<option>Informatika</option>
 						<option>Kedokteran</option>
@@ -313,7 +284,7 @@
 					<center><img src="taya.jpg" width="270px"></center>
 				</div><br>
 				<div class="card" style="background-color: slateblue;">
-		    		<h3>Follow Me</h3>
+		    		<h3>Social Media</h3><br>
 		    		<img src="ig.png" width="50px">
 		    		<a href="https://www.instagram.com/sipirdaa__/">Sipirda</a><br><br>
 		    		<img src="fb.png" width="45px">
@@ -321,6 +292,6 @@
 		    		<p>Copyright ©️ Sipirda 2022</p>
 	       		</div>
 			</div>
-		</div>
+		</div>	
 </body>
 </html>
